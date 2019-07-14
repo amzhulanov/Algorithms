@@ -19,7 +19,6 @@ public class Task4_HappyTicket {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         try {
             File OutputFile = new File("output.txt");
             FileWriter fileWriter = new FileWriter(OutputFile);

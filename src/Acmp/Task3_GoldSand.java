@@ -9,7 +9,6 @@ public class Task3_GoldSand {
     public static void main(String[] args) throws IOException {
         ArrayList<Byte> cost = new ArrayList<>();
         ArrayList<Byte> weight = new ArrayList<>();
-
         File InputFile = new File("input.txt");
         FileReader fileReader = new FileReader(InputFile);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -40,7 +39,6 @@ public class Task3_GoldSand {
         long sum = 0;
         for (int n = 0; n < cost.size(); n++) {
             sum = sum + cost.get(n) * weight.get(n);
-
         }
         try {
             File OutputFile = new File("output.txt");
@@ -67,6 +65,5 @@ class ArrayComparator implements Comparator<Byte> {
         } else {
             return 0;
         }
-
     }
 }
