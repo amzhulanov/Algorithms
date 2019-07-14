@@ -30,7 +30,6 @@ public class Task2 {
             }
         }
         bufferedReader.close();
-
         try {
             File OutputFile = new File("output.txt");
             FileWriter fileWriter = new FileWriter(OutputFile);

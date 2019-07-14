@@ -7,8 +7,8 @@ import java.util.Comparator;
 
 public class Task3_GoldSand {
     public static void main(String[] args) throws IOException {
-        ArrayList<Byte> cost=new ArrayList<>();
-        ArrayList<Byte> weight=new ArrayList<>();
+        ArrayList<Byte> cost = new ArrayList<>();
+        ArrayList<Byte> weight = new ArrayList<>();
 
         File InputFile = new File("input.txt");
         FileReader fileReader = new FileReader(InputFile);
@@ -25,7 +25,6 @@ public class Task3_GoldSand {
                         } else {
                             weight.add(Byte.parseByte(parts[i]));
                         }
-
                     }
                 } else {
                     break;
@@ -35,8 +34,8 @@ public class Task3_GoldSand {
             }
         }
         bufferedReader.close();
-        Collections.sort(cost,new ArrayComparator());
-        Collections.sort(weight,new ArrayComparator());
+        Collections.sort(cost, new ArrayComparator());
+        Collections.sort(weight, new ArrayComparator());
 
         long sum = 0;
         for (int n = 0; n < cost.size(); n++) {
@@ -47,7 +46,7 @@ public class Task3_GoldSand {
             File OutputFile = new File("output.txt");
             FileWriter fileWriter = new FileWriter(OutputFile);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            String s=String.valueOf(sum);
+            String s = String.valueOf(sum);
             bufferedWriter.write(s);
             bufferedWriter.close();
         } catch (

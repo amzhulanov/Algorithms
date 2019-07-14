@@ -8,14 +8,14 @@ public class Task4_HappyTicket {
         int aSum = 0;
         int bSum = 0;
         try (FileInputStream in = new FileInputStream("input.txt")) {
-            int count=in.read(buf);
-                for (int i = 0; i < count; i++) {
-                    if (i < count/2) {
-                        aSum = aSum + Character.getNumericValue(((char) buf[i]));
-                    } else {
-                        bSum = bSum + Character.getNumericValue(((char) buf[i]));
-                    }
+            int count = in.read(buf);
+            for (int i = 0; i < count; i++) {
+                if (i < count / 2) {
+                    aSum = aSum + Character.getNumericValue(((char) buf[i]));
+                } else {
+                    bSum = bSum + Character.getNumericValue(((char) buf[i]));
                 }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
