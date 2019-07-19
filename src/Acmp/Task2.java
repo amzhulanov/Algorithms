@@ -5,7 +5,6 @@ import java.io.*;
 public class Task2 {
 
     public static void main(String[] args) throws IOException {
-
         int[] sum = new int[2];
         sum[0] = 0;
         sum[1] = 0;

@@ -36,6 +36,4 @@ public class Task5_ArithmeticProgression {
             e.printStackTrace();
         }
     }
-
-
 }
