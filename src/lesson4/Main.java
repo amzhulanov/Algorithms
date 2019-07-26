@@ -38,7 +38,8 @@ public class Main {
             System.out.print(iterator.next()+", ");
         }
 
-
+        System.out.println();
+        iterator.remove();
 
 
     }

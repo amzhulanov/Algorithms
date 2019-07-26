@@ -36,6 +36,11 @@ public class DoubleLinkedList<Item> implements Iterable<Item> {
             return (Item) current.getValue();
         }
 
+        @Override
+        public void remove() {
+            DoubleLinkedList.this.delete((Item) current.getValue());
+        }
+
     }
 
     private class Node<Item> {
