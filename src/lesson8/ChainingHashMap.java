@@ -70,6 +70,18 @@ public class ChainingHashMap<Key, Value> {
         return null;
     }
 
+    public void delete (Key key){
+        isKeyNotNull(key);
+        int i=hash(key);
+
+        for(Node node:st[i]){
+            if (key.equals(node.key)){
+                st[i].remove();
+                size--;
+                return;
+            }
+        }
+    }
 
 
     @Override
