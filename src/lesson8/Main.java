@@ -18,7 +18,8 @@ public class Main {
         }
         System.out.println(chainingHashMap);
         System.out.println(chainingHashMap.get(10));
-
+        chainingHashMap.delete(1);
+        System.out.println(chainingHashMap);
         //chainingHashMap.delete(5);
         //System.out.println(chainingHashMap);
 /*
